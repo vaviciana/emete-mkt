@@ -224,8 +224,33 @@ p {
 }
 
 .contenedor_cards_testimonios {
+  display: flex;
+  align-items: center;
   height: 50vh;
   padding: 20px;
+  position: relative;
+  background-color: #17292d;
+}
+
+.card-body {
+  background-color: #f5f2ea;
+}
+.card-body img {
+  margin: 40px;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  top: -110px;
+  left: -50px;
+  box-shadow: 2px 2px 5px gray;
+}
+
+.red_testimonios {
+  font-size: 12px;
+  font-family: "Playfair Display";
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

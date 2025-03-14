@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*VARIABLES GENERALES*/
+/*ESTILOS GENERALES*/
+/*FONDO*/
+body {
+  background-color: #f5f2ea;
+}
+
+/*HEADER*/
+header nav {
+  color: #17292d;
+}
+
+.logo_menu {
+  width: 60px;
+  height: auto;
+  background-color: #17292d;
+  border-radius: 50%;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.boton {
+  background-color: #17292d;
+  color: #f5f2ea;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+  font-family: "Playfair Display";
+}
+.boton:hover {
+  background-color: none;
+  border: 1px solid #17292d;
+  color: #17292d;
+}
+
+/*FOOTER*/
+/*FUENTES*/
+@font-face {
+  font-family: "Amandine";
+  src: url("../recursos/fuentes/Amandine-medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Amandine_resaltado";
+  src: url("/recursos/fuentes/Amandine-bolditalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-family: "Amandine", sans-serif;
+}
+
+p {
+  font-family: "Inter";
+}
+
+.resaltado {
+  font-family: "Amandine_resaltado";
+}
+
+/*INICIO*/
+/*HERO SECTION*/
+.hero_section {
+  position: relative; /* Asegurar que los elementos hijos absolutos se posicionen dentro */
+  height: 90vh;
+  color: #f5f2ea;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.hero_section .background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -0.95;
+}
+
+.texto_hero {
+  height: 80vh;
+  margin: 5cqw;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.texto_hero h1 {
+  font-size: 40px;
+}
+.texto_hero h2 {
+  font-size: 20px;
+  font-family: "Playfair Display";
+}
+.texto_hero p {
+  font-family: "inter";
+  font-size: 15px;
+}
+
+@media (min-width: 600px) {
+  .texto_hero h1 {
+    font-size: 80px;
+  }
+  .texto_hero h2 {
+    font-size: 40px;
+  }
+  .texto_hero p {
+    font-size: 30px;
+  }
+}
+.marco-manifiesto {
+  background-color: #17292d;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: max-content;
+}
+.marco-manifiesto .manifiesto {
+  color: #f5f2ea;
+  font-family: "Amandine";
+  font-size: 40px;
+  animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.por-que {
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo {
+  font-family: "Amandine";
+  text-align: center;
+  font-size: 40px;
+  margin: 10px;
+}
+
+.cuadro_texto {
+  background-color: #17292d;
+  color: #f5f2ea;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px gray;
+  font-size: 18px;
+}
+
+@media (min-width: 600px) {
+  .titulo {
+    font-size: 80px;
+  }
+  .cuadro_texto {
+    font-size: 20px;
+    max-width: 800px;
+  }
+}
+.card-img-top {
+  width: 100%; /* O ajusta según necesites */
+  height: 200px; /* O ajusta según la altura que necesites */
+  object-fit: cover;
+}
+
+.card-title {
+  font-family: "Amandine";
+  position: relative;
+  margin-top: 40px;
+}
+
+.numeracion {
+  width: 80px; /* Tamaño del círculo */
+  height: 80px;
+  background-color: #f5f2ea; /* Color beige */
+  border-radius: 50%;
+  position: absolute;
+  top: 160px; /* Ajusta la posición para que se solape con la tarjeta */
+  left: 50%;
+  transform: translateX(-50%); /* Centra el círculo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #17292d; /* Color del número */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  font-family: "Amandine";
+}
+
+.contenedor_cards_testimonios {
+  height: 50vh;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

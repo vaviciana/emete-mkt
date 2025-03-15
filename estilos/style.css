@@ -295,6 +295,11 @@ p {
   text-align: center;
 }
 
+@media (min-width: 600px) {
+  .contenedor_cards_testimonios {
+    height: 80vh;
+  }
+}
 .cta {
   width: 90%;
   height: 80vh;
@@ -324,6 +329,11 @@ p {
   top: 50px;
 }
 
+@media (min-width: 600px) {
+  .cta {
+    font-size: 3rem;
+  }
+}
 .imagen-cta {
   z-index: -1;
   position: relative;

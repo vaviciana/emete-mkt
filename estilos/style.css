@@ -53,13 +53,13 @@ header nav {
 /*FUENTES*/
 @font-face {
   font-family: "Amandine";
-  src: url("../recursos/fuentes/Amandine-medium.otf") format("opentype");
+  src: url("https://vaviciana.github.io/emete-mkt/recursos/fuentes/Amandine-medium.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Amandine_resaltado";
-  src: url("../recursos/fuentes/Amandine-bolditalic.otf") format("opentype");
+  src: url("https://vaviciana.github.io/emete-mkt/recursos/fuentes/Amandine-bolditalic.otf") format("opentype");
   font-weight: bold;
   font-style: italic;
 }

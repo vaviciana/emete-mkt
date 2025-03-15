@@ -53,6 +53,9 @@ header nav{
         color: $verde-oscuro;
     }
 }
+.boton-acotado{
+    max-width: 40%;
+}
 
 
 /*FOOTER*/
@@ -67,7 +70,7 @@ header nav{
 
 @font-face {
     font-family: 'Amandine_resaltado';
-    src: url('/recursos/fuentes/Amandine-bolditalic.otf') format('opentype');
+    src: url('../recursos/fuentes/Amandine-bolditalic.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }

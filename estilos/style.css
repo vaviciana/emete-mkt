@@ -50,6 +50,24 @@ header nav {
 }
 
 /*FOOTER*/
+.contenedor_footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  height: 100px;
+  width: 200px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+}
+
+.icono-redes {
+  width: 30px;
+  height: 30px;
+}
+
 /*FUENTES*/
 @font-face {
   font-family: "Amandine";
@@ -227,10 +245,17 @@ p {
   font-family: "Amandine";
 }
 
+.cuerpo-productos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*TESTIMONIOS*/
 .contenedor_cards_testimonios {
   display: flex;
   align-items: center;
-  height: 50vh;
+  height: 90vh;
   padding: 20px;
   position: relative;
   background-color: #17292d;
@@ -238,8 +263,9 @@ p {
 
 .card-body {
   background-color: #f5f2ea;
+  text-align: center;
 }
-.card-body img {
+.card-body .foto-testimonio {
   margin: 40px;
   position: absolute;
   width: 120px;
@@ -250,11 +276,62 @@ p {
   left: -50px;
   box-shadow: 2px 2px 5px gray;
 }
+.card-body div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-body div img {
+  width: 150px;
+  height: auto;
+  margin-bottom: -30px;
+  padding: 0;
+}
 
 .red_testimonios {
   font-size: 12px;
   font-family: "Playfair Display";
   text-align: center;
+}
+
+.cta {
+  width: 90%;
+  height: 80vh;
+  font-family: "Amandine";
+  font-size: 2rem;
+  margin: 10px;
+  z-index: 1;
+  position: absolute;
+}
+.cta .quote-icon-open {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 6rem;
+  color: #f5f2ea;
+  background-color: #17292d;
+  border-radius: 50%;
+  opacity: 0.5;
+  position: relative;
+}
+.cta p {
+  font-family: "Amandine";
+  padding-left: 30px;
+  position: absolute;
+  top: 50px;
+}
+
+.imagen-cta {
+  z-index: -1;
+  position: relative;
+  width: 80%;
+  height: 80vh;
+  object-fit: cover;
+  opacity: 0.25;
+  left: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */

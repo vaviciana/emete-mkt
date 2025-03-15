@@ -59,6 +59,23 @@ header nav{
 
 
 /*FOOTER*/
+.contenedor_footer{
+    display: flex;
+    align-items: center;
+}
+
+.footer{
+    height: 100px;
+    width: 200px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+}
+
+.icono-redes{
+    width: 30px;
+    height: 30px;
+}
 
 /*FUENTES*/
 @font-face {
@@ -74,6 +91,7 @@ header nav{
     font-weight: bold;
     font-style: italic;
 }
+
 
 
 h1 {
@@ -243,10 +261,18 @@ p{
     font-family: $fuente-titulos;
 }
 
+.cuerpo-productos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*TESTIMONIOS*/
+
 .contenedor_cards_testimonios{
     display: flex;
     align-items: center;
-    height: 50vh;
+    height: 90vh;
     padding: 20px;
     position: relative;
     background-color: $verde-oscuro;
@@ -254,7 +280,8 @@ p{
 
 .card-body{
     background-color: $beige;
-    img{
+    text-align: center;
+    .foto-testimonio{
     margin: 40px;
     position: absolute;
     width: 120px;
@@ -265,10 +292,62 @@ p{
     left: -50px;
     box-shadow: 2px 2px 5px gray;
     }
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 150px;
+            height: auto;
+            margin-bottom:-30px;
+            padding: 0;
+        }
+    }
 }
+
 
 .red_testimonios{
     font-size: 12px;
     font-family: $fuente-subtitulos;
     text-align: center;
+}
+
+.cta{
+    width: 90%;
+    height: 80vh;
+    font-family: $fuente-titulos;
+    font-size: 2rem;
+    margin: 10px;
+    z-index: 1;
+    position: absolute;
+    .quote-icon-open{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 6rem;
+    color: $beige;  
+    background-color: $verde-oscuro;
+    border-radius: 50%;
+    opacity: 0.5;
+    position: relative;     
+    }
+    p{
+        font-family: $fuente-titulos;
+        padding-left:30px;
+        position: absolute;
+        top: 50px;
+    }
+}
+
+.imagen-cta{
+    z-index: -1;
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    object-fit: cover;
+    opacity: 0.25;
+    left:30%;
 }

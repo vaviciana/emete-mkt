@@ -60,8 +60,8 @@ header nav {
 @font-face {
   font-family: "Amandine_resaltado";
   src: url("../recursos/fuentes/Amandine-bolditalic.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: bold;
+  font-style: italic;
 }
 h1 {
   font-family: "Amandine", sans-serif;

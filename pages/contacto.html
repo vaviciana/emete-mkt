@@ -33,43 +33,44 @@
         </nav>
     </header>
     <main>
-        <div>
+        <div class="d-flex flex-column align-items-center justify-content-center">
             <div>
-                <h1>
-                    Aquí nos gusta <span class="resaltado">hacer las cosas bien</span>
+                <h1 class="titulo-contacto">
+                    Nos vemos en <span class="resaltado">redes</span>
                 </h1>
             </div>
-            <div>
-                <h2 class="fs-5 text-center">
-                    Qué gusto da ver resultados cuando te conectas de verdad, pues aquí transformamos likes en experiencias. Nos gusta hacerlo con chispa.
-                </h2>
-            </div>
-            <div>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-                        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-                    </div>
-                    <div class="col-md-5">
-                        <img src="../recursos/hazte_visible.jpg" alt="" width="500px" height="500px">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+                <div>
+                    <div class="contenedor-imagen">
+                        <div class="overlay-contacto"></div>
+                        <img src="../recursos/tere.png" alt=""class="imagen-contacto">
                     </div>
                 </div>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-                        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-                    </div>
-                    <div class="col-md-5">
-                        <img src="../recursos/hazte_visible.jpg" alt="" width="500px" height="500px">
-                    </div>
-                </div>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-                        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-                    </div>
-                    <div class="col-md-5">
-                        <img src="../recursos/hazte_visible.jpg" alt="" width="500px" height="500px">
+                <div class="contenedor-formulario">
+                    <div class="formulario">
+                        <form action="enviar.php" method="post">
+                            <div class="lineas_formulario">
+                                <label for="Nombre" class="label">Nombre</label>
+                                <input type="text" name="nombre" required class="cuadro_texto_formulario">
+                            </div>
+                            <div class="lineas_formulario">
+                                <label for="Apellido" class="label">Apellido</label>
+                                <input type="text" name="apellido" required class="cuadro_texto_formulario">
+                            </div>
+                            <div class="lineas_formulario">
+                                <label for="Telefono" class="label">Teléfono</label>
+                                <input type="number" name="telefono" required class="cuadro_texto_formulario">
+                            </div>
+                            <div class="lineas_formulario">
+                                <label for="Correo" class="label">Correo</label>
+                                <input type="email" name="correo" required class="cuadro_texto_formulario">
+                            </div>
+                            <div class="lineas_formulario">
+                                <label for="Comentarios" class="label">Comentarios</label>
+                                <textarea name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..." class="cuadro_texto_formulario"></textarea>                    
+                            </div>
+                            <button class="btn boton m-2" type="submit">Enviar</button>
+                        </form>
                     </div>
                 </div>
             </div>

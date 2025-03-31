@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../estilos/style.css">
     <script defer src="script.js"></script>
     <title>Document</title>
+    
 </head>
 <body>
     <header>
@@ -49,50 +50,75 @@
         </nav>
     </header>
     <main>
-        <div class="d-flex flex-column align-items-center justify-content-center">
-            <div>
-                <h1 class="titulo-contacto">
-                    Nos vemos en <span class="resaltado">redes</span>
-                </h1>
-            </div>
-            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
-                <div>
-                    <div class="contenedor-imagen">
-                        <div class="overlay-contacto"></div>
-                        <img src="../recursos/tere.png" alt=""class="imagen-contacto">
-                    </div>
-                </div>
-                <div class="contenedor-formulario">
-                    <div class="formulario">
-                        <form action="enviar.php" method="post">
-                            <div class="lineas_formulario">
-                                <label for="Nombre" class="label">Nombre</label>
-                                <input type="text" name="nombre" required class="cuadro_texto_formulario">
-                            </div>
-                            <div class="lineas_formulario">
-                                <label for="Apellido" class="label">Apellido</label>
-                                <input type="text" name="apellido" required class="cuadro_texto_formulario">
-                            </div>
-                            <div class="lineas_formulario">
-                                <label for="Telefono" class="label">Teléfono</label>
-                                <input type="number" name="telefono" required class="cuadro_texto_formulario">
-                            </div>
-                            <div class="lineas_formulario">
-                                <label for="Correo" class="label">Correo</label>
-                                <input type="email" name="correo" required class="cuadro_texto_formulario">
-                            </div>
-                            <div class="lineas_formulario">
-                                <label for="Comentarios" class="label">Comentarios</label>
-                                <textarea name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..." class="cuadro_texto_formulario"></textarea>                    
-                            </div>
-                            <button class="btn boton m-2" type="submit">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+        <div>
+            <h1 class="titulo_servicios">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h1>
         </div>
-        
-        
+        <div class="scroll-container text-start">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-body">
+                        <div>
+                            <h2 class="my-0 fw-normal">Para quieren dar los primeros pasos</h2>
+                                <h3 class="card-title pricing-card-title">200€*<small class="text-body-secondary fw-light">+IVA</small></h3>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>Creación de 1 campaña de Ads (Meta o Google)</li>
+                                    <li>Informe básico de seguimiento mensual</li>
+                                    <li>Diseño de anuncios personalizados</li>
+                                </ul>
+                        </div>
+                        <div> 
+                            <p>
+                                *Más el presupuesto a convenir con el cliente en publicidad.
+                            </p>
+                            <button type="button" class="w-100 btn boton">Pack One</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-body">
+                        <div>
+                            <h2 class="my-0 fw-normal">Con todas las secciones</h2>
+                                <h3 class="card-title pricing-card-title">450€*<small class="text-body-secondary fw-light">+IVA</small></h3>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>Creación de 3 campañas de Ads (Meta o Google)</li>
+                                    <li>Informe avanzado de seguimiento semanal</li>
+                                    <li>Diseño de anuncios personalizados</li>
+                                </ul>
+                        </div>
+                        <div> 
+                            <p>
+                                *Más el presupuesto a convenir con el cliente en publicidad.
+                            </p>
+                            <button type="button" class="w-100 btn boton">Pack Multi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-body">
+                        <div>
+                            <h2 class="my-0 fw-normal">Para integrar tu tienda online</h2>
+                        <h3 class="card-title pricing-card-title">800€*<small class="text-body-secondary fw-light">+IVA</small></h3>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Creación de hasta 6 campañas de Ads (Meta o Google)</li>
+                            <li>Informe seguimiento en directo (Power BI)</li>
+                            <li>Diseño de anuncios personalizados</li>
+                        </ul>
+                        </div>
+                        <div> 
+                            <p>
+                                *Más el presupuesto a convenir con el cliente en publicidad.
+                            </p>
+                            <button type="button" class="w-100 btn boton">Pack Vendo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
     <footer class="mt-5">
         <hr class="featurette-divider m-2">
@@ -112,6 +138,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

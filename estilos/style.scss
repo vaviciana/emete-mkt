@@ -40,7 +40,7 @@ header nav{
 .boton{
     background-color: $verde-oscuro;
     color: $beige;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,6 +56,7 @@ header nav{
 .boton-acotado{
     max-width: 40%;
 }
+
 
 
 /*FOOTER*/
@@ -105,6 +106,28 @@ p{
 .resaltado{
     font-family: 'Amandine_resaltado', sans-serif;
 }
+
+/*MENU*/
+
+.navbar-nav{
+    color: $verde-oscuro;
+    &:hover{
+        color: $verde-claro;
+    }
+}
+
+.dropdown-menu{
+    background:white;
+    border-radius: none;
+    border: none;
+    color: $gris;
+    li > a:hover{
+        background-color: transparent;
+        font-style: italic;
+        color: $verde-claro;
+    }
+}
+
 
 /*INICIO*/
 /*HERO SECTION*/
@@ -207,7 +230,7 @@ p{
 .cuadro_texto{
     background-color: #17292d;
     color: $beige;
-    padding: 20px;
+    padding: 15px;
     margin: 10px;
     margin-left: 20px;
     margin-right: 20px;
@@ -218,6 +241,8 @@ p{
     border-radius: 20px;
     box-shadow: 2px 2px 5px gray;
     font-size: 18px;
+    font-family: 'Inter';
+    font-weight: lighter;
 }
 
 @media (min-width: 600px){
@@ -278,20 +303,25 @@ p{
     background-color: $verde-oscuro;
 }
 
-.card-body{
+.card-testimonios{
+    height: 40vh;
     background-color: $beige;
-    text-align: center;
     .foto-testimonio{
-    margin: 40px;
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    top:-110px;
-    left: -50px;
-    box-shadow: 2px 2px 5px gray;
-    }
+        margin: 40px;
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        top:-110px;
+        left: -50px;
+        box-shadow: 2px 2px 5px gray;
+        }
+}
+
+.card-body-testimonios{
+    text-align: center;
+    height: 40vh;
     div {
         display: flex;
         flex-direction: column;
@@ -370,8 +400,6 @@ p{
     text-align: center;
 }
 
-
-
 .contenedor-imagen{
     position: relative;
     z-index: -1;
@@ -417,3 +445,157 @@ p{
 .cuadro_texto_formulario{
     width: 100%;
 }
+
+/*SERVICIOS*/
+.titulos_servicios{
+    padding: 10px;
+    margin: 10px;
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    h2{
+        font-weight: lighter;
+        font-family: 'Inter';
+        font-size: 18px;
+    }
+}
+
+.contenedor_servicios{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    .contenedor_servicios_imagen{
+        position: absolute;
+        object-fit: cover;
+        z-index: -1;
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .contenedor_servicios_overlay{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        background-color: $verde-oscuro;
+        opacity: 0.5;
+        top:0;
+        z-index: 0;
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+    }
+    &:hover .contenedor_servicios_overlay{
+        opacity: 0;
+    }
+
+    .contenedor_servicios_texto{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top:0;
+        z-index: 1;
+        color: $beige;
+        h3{
+            font-family: $fuente-titulos;
+            font-size: 30px;
+            text-align: center;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+    /*SERVICIOS-C/U*/
+    .titulo_servicios{
+        margin: 20px;
+        text-align: center;
+    }
+    .scroll-container {
+        display: flex;
+        overflow-x: auto;
+        gap: 16px;
+        padding: 16px;
+        align-items: center;
+        justify-content: center;
+        scroll-snap-type: x mandatory;
+
+        &::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        .col{
+            max-width: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+    .card{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+
+    .card-body{
+        border-radius: 10px;
+        background-color: white;
+        width: 100%;
+        min-height: 100vh;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+            background-color: white;
+        }
+        h2{
+            
+            font-size: 20px;
+            font-family: 'Amandine_resaltado';
+            color: $verde-oscuro;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+        }
+        ul li {
+            list-style: none;
+            background-image: url('../recursos/check.png');
+            background-size: 15px 15px;
+            background-repeat: no-repeat;
+            background-position: 0 5px;
+            padding-left: 30px; /* deja hueco para el icono */
+            color: $verde-claro;
+        }
+        div > p {
+            font-size: 10px;
+            color: gray;
+            font-style: italic;
+        }
+    }    
+
+    .pricing-card-title{
+        font-size: 40px;
+        small{
+            font-size: 20px;
+        }
+    }
+  

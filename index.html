@@ -12,17 +12,33 @@
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-            <img src="recursos/Logos Emeté - Transparente-06.png" alt="" class="logo_menu">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <img src="../recursos/Logos Emeté - Transparente-06.png" alt="" class="logo_menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-md-flex justify-content-md-center" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    <a class="nav-link" href="#">Sobre Nosotras</a>
-                    <a class="nav-link" href="#">Servicios</a>
-                    <a class="nav-link" href="#">Contacto</a>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nosotras</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../pages/servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../pages/redes.html">Gestión de Redes</a></li>
+                        <li><a class="dropdown-item" href="../pages/diseño.html">Diseño Gráfico</a></li>
+                        <li><a class="dropdown-item" href="../pages/web.html">Diseño Web</a></li>
+                        <li><a class="dropdown-item" href="../pages/publicidad.html">Publicidad Digital</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
             <button class="d-none d-md-flex btn btn-sm">
                 <p class=" boton">
@@ -91,48 +107,7 @@
                     Amiga, <span class="resaltado">ponte las pilas</span> con las redes.
                 </h2>
             </div>
-            <div class="card-group text-center m-2">
-                <div class="card d-flex justify-content-between">
-                    <div class="numeracion">
-                            1
-                    </div>
-                    <img src="recursos/hazte_visible.jpg" class="card-img-top" alt="...">
-                    <div class="card-body cuerpo-productos d-flex flex-column">
-                        <h5 class="card-title">Hazte <span class="resaltado">Visible</span></h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <button class="btn boton">
-                            +info
-                        </button>
-                    </div>
-                    
-                </div>
-                <div class="card d-flex justify-content-evenly">
-                    <div class="numeracion">
-                        2
-                    </div>
-                    <img src="recursos/haz_ruido.jpg" class="card-img-top" alt="...">
-                    <div class="card-body cuerpo-productos d-flex flex-column">
-                        <h5 class="card-title">Haz <span class="resaltado">Ruido</span></h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <button class="btn boton">
-                            +info
-                        </button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="numeracion">
-                        3
-                    </div>
-                    <img src="recursos/hazte_referente.jpg" class="card-img-top" alt="...">
-                    <div class="card-body cuerpo-productos d-flex flex-column">
-                        <h5 class="card-title">Hazte <span class="resaltado">Referente</span></h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <button class="btn boton">
-                            +info
-                        </button>
-                    </div>
-                </div>
-            </div>
+            
             <div class="titulo mb-5">
                 <h2>
                     Las cosas claras y los <span class="resaltado">post a stories.</span>
@@ -148,8 +123,8 @@
             <div class="carousel-inner">
                 <div class="contenedor_cards_testimonios">
                     <div class="carousel-item active">
-                        <div class="card text-center">
-                            <div class="card-body">
+                        <div class="card text-center card-testimonios">
+                            <div class="card-body-testimonios">
                                 <img class="foto-testimonio" src="recursos/tere.PNG" alt="">
                                 <div>
                                 <img src="recursos/valoracion.png" alt="" class="mt-5">

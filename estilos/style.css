@@ -570,4 +570,269 @@ p {
   font-size: 20px;
 }
 
+/*SOBRE NOSOTRAS*/
+.sobrenosotras_manifiesto {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: left;
+  background-color: #17292d;
+  color: #f5f2ea;
+}
+.sobrenosotras_manifiesto h1 {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .sobrenosotras_manifiesto h1 {
+    font-size: 2.5rem;
+  }
+}
+.sobrenosotras {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+}
+.sobrenosotras.reverse {
+  flex-direction: row-reverse;
+}
+.sobrenosotras .sobrenosotras_imagen img {
+  display: flex;
+  align-items: end;
+  width: auto;
+  max-width: 300px;
+  height: 80vh;
+  object-fit: cover;
+  object-position: center left;
+  opacity: 0.5;
+  margin-bottom: 100px;
+}
+.sobrenosotras .sobrenosotras_texto {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  margin: 15px;
+}
+.sobrenosotras .sobrenosotras_texto h2 {
+  color: #17292d;
+  text-align: end;
+  font-family: "Amandine";
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.sobrenosotras .sobrenosotras_texto p {
+  background-color: #17292d;
+  opacity: 0.65;
+  color: #f5f2ea;
+  padding: 1.2rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+.sobrenosotras .sobrenosotras_texto_tere {
+  left: 0;
+  right: 10%;
+}
+.sobrenosotras .sobrenosotras_texto_tere h2 {
+  text-align: start;
+}
+.sobrenosotras .sobrenosotras_texto_tere p {
+  text-align: start;
+}
+
+@media (min-width: 600px) {
+  .sobrenosotras .sobrenosotras_imagen img {
+    width: 500px;
+    max-width: 1000px;
+  }
+  .sobrenosotras .sobrenosotras_texto {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .sobrenosotras .sobrenosotras_texto h2 {
+    font-size: 2rem;
+  }
+  .sobrenosotras .sobrenosotras_texto p {
+    font-size: 1rem;
+  }
+}
+.circulo-container {
+  perspective: 1000px;
+  width: 300px;
+  height: 300px;
+}
+
+.circulo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+  cursor: pointer;
+}
+.circulo:hover {
+  transform: rotateY(180deg);
+}
+.circulo .cara {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  font-family: sans-serif;
+}
+.circulo .frente_autenticidad {
+  background: url("../recursos/autenticidad.jpg") center/cover no-repeat;
+  font-family: "amandine_resaltado";
+  color: #17292d;
+  z-index: 1;
+}
+.circulo .frente_autenticidad::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #f5f2ea;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+}
+.circulo .frente_autenticidad h2 {
+  font-size: 40px;
+}
+.circulo .atras_autenticidad {
+  background: url("../recursos/autenticidad.jpg") center/cover no-repeat;
+  transform: rotateY(180deg);
+  position: relative;
+  z-index: 1;
+  color: #f5f2ea;
+  font-family: "Inter";
+}
+.circulo .atras_autenticidad::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #17292d;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+}
+.circulo .frente_creatividad {
+  background: url("../recursos/creatividad.jpg") center/cover no-repeat;
+  font-family: "amandine_resaltado";
+  color: #17292d;
+  z-index: 1;
+}
+.circulo .frente_creatividad::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #f5f2ea;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+}
+.circulo .frente_creatividad h2 {
+  font-size: 40px;
+}
+.circulo .atras_creatividad {
+  background: url("../recursos/autenticidad.jpg") center/cover no-repeat;
+  transform: rotateY(180deg);
+  position: relative;
+  z-index: 1;
+  color: #f5f2ea;
+  font-family: "Inter";
+}
+.circulo .atras_creatividad::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #17292d;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+}
+.circulo .frente_transparencia {
+  background: url("../recursos/transparencia.jpg") center/cover no-repeat;
+  font-family: "amandine_resaltado";
+  color: #17292d;
+  z-index: 1;
+}
+.circulo .frente_transparencia::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #f5f2ea;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+}
+.circulo .frente_transparencia h2 {
+  font-size: 40px;
+}
+.circulo .atras_transparencia {
+  background: url("../recursos/transparencia.jpg") center/cover no-repeat;
+  transform: rotateY(180deg);
+  position: relative;
+  z-index: 1;
+  color: #f5f2ea;
+  font-family: "Inter";
+}
+.circulo .atras_transparencia::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #17292d;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+}
+.circulo .frente_compromiso {
+  background: url("../recursos/compromiso.jpg") center/cover no-repeat;
+  font-family: "amandine_resaltado";
+  color: #17292d;
+  z-index: 1;
+}
+.circulo .frente_compromiso::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #f5f2ea;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+}
+.circulo .frente_compromiso h2 {
+  font-size: 40px;
+}
+.circulo .atras_compromiso {
+  background: url("../recursos/compromiso.jpg") center/cover no-repeat;
+  transform: rotateY(180deg);
+  position: relative;
+  z-index: 1;
+  color: #f5f2ea;
+  font-family: "Inter";
+}
+.circulo .atras_compromiso::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #17292d;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+}
+
 /*# sourceMappingURL=style.css.map */

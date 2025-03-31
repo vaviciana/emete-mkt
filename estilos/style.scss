@@ -644,13 +644,13 @@ p{
         object-fit: cover;
         object-position: center left;
         opacity: 0.5;
-        margin-bottom: 100px;
+        margin-bottom: 170px;
     }
 }
 
 .sobrenosotras_texto {
     position: absolute;
-    top: 45%;
+    top: 25%;
     left: 5%;
     margin: 15px;
     h2 {
@@ -670,8 +670,20 @@ p{
         border-radius: 15px;
         font-size: 0.80rem;
         line-height: 1.6;
-
     }
+    .quote-icon-sobrenosotras{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        font-size: 6rem;
+        color: $beige;  
+        background-color: $verde-oscuro;
+        border-radius: 50%;
+        opacity: 0.5;
+        position: relative;     
+        }
 }
     .sobrenosotras_texto_tere{
         left: 0;
@@ -701,7 +713,6 @@ p{
         }
         p{
             font-size: 1rem;
-            
         }
     }
 }
@@ -799,7 +810,7 @@ p{
     }
 
     .atras_creatividad {
-        background: url('../recursos/autenticidad.jpg') center/cover no-repeat;
+        background: url('../recursos/creatividad.jpg') center/cover no-repeat;
         transform: rotateY(180deg);
         position: relative;
         z-index: 1;
@@ -891,3 +902,4 @@ p{
         }
     }
 }
+

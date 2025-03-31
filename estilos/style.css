@@ -610,11 +610,11 @@ p {
   object-fit: cover;
   object-position: center left;
   opacity: 0.5;
-  margin-bottom: 100px;
+  margin-bottom: 170px;
 }
 .sobrenosotras .sobrenosotras_texto {
   position: absolute;
-  top: 45%;
+  top: 25%;
   left: 5%;
   margin: 15px;
 }
@@ -634,6 +634,19 @@ p {
   border-radius: 15px;
   font-size: 0.8rem;
   line-height: 1.6;
+}
+.sobrenosotras .sobrenosotras_texto .quote-icon-sobrenosotras {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 6rem;
+  color: #f5f2ea;
+  background-color: #17292d;
+  border-radius: 50%;
+  opacity: 0.5;
+  position: relative;
 }
 .sobrenosotras .sobrenosotras_texto_tere {
   left: 0;
@@ -748,7 +761,7 @@ p {
   font-size: 40px;
 }
 .circulo .atras_creatividad {
-  background: url("../recursos/autenticidad.jpg") center/cover no-repeat;
+  background: url("../recursos/creatividad.jpg") center/cover no-repeat;
   transform: rotateY(180deg);
   position: relative;
   z-index: 1;

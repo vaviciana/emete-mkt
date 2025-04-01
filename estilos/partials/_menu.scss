@@ -1,0 +1,33 @@
+.navbar-nav{
+    color: $verde-oscuro;
+    &:hover{
+        color: $verde-claro;
+    }
+}
+
+header nav{
+    color: $verde-oscuro;
+}
+
+.logo_menu{
+    width: 60px;
+    height: auto;
+    background-color: $verde-oscuro;
+    border-radius: 50%;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.dropdown-menu{
+    background:white;
+    border-radius: none;
+    border: none;
+    color: $gris;
+    li > a:hover{
+        background-color: transparent;
+        font-style: italic;
+        color: $verde-claro;
+    }
+}

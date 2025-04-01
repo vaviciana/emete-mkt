@@ -95,10 +95,22 @@
     justify-content: center;
 }
 
-.titulo{
+.titulo_testimonios{
+    color: $beige;
     font-family: $fuente-titulos;
     text-align: center;
-    font-size: 40px;
+    font-size: 1.5rem;
+    background-color: $verde-oscuro;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -10px;
+}
+
+.titulo{
+    color: $verde-oscuro;
+    font-family: $fuente-titulos;
+    text-align: center;
+    font-size: 2.5rem;
     margin: 10px;
 }
 
@@ -157,7 +169,7 @@
 }
 
 .card-testimonios{
-    height: 40vh;
+    height: 30vh;
     background-color: $beige;
     .foto-testimonio{
         margin: 40px;
@@ -212,6 +224,10 @@
     .contenedor_cards_testimonios{
         height: 80vh;
     }
+}
+
+.cta_general{
+    overflow: hidden;
 }
 
 .cta{

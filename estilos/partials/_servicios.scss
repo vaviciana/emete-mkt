@@ -68,9 +68,18 @@
 
     /*SERVICIOS-C/U*/
     .titulo_servicios{
+        font-size: 2rem;
         margin: 20px;
         text-align: center;
     }
+
+    .subtitulo_servicios{
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1.1rem;
+    }
+    
     .scroll-container {
         display: flex;
         overflow-x: auto;
@@ -85,11 +94,17 @@
         }
 
         .col{
-            min-width: 200px;
+            min-width: 220px;
             max-width: 300px;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+        }
+    }
+
+    @media (min-width: 600px){
+        .scroll-container{
+            justify-content: center;
         }
     }
 
@@ -119,14 +134,17 @@
             background-color: white;
         }
         h2{
-            
             font-size: 20px;
             font-family: 'Amandine';
             color: $verde-oscuro;
             text-align: center;
+            height: 45px;
         }
         h3{
-            font-size: 40px;
+            height: 45px;
+            margin: 10px;
+            font-size: 2rem;
+            font-family: $fuente-titulos;
         }
         ul li {
             list-style: none;
@@ -150,3 +168,18 @@
             font-size: 20px;
         }
     }
+
+.cta_servicios{
+    background-color: $verde-oscuro;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        text-align: center;
+        color: $beige;
+        font-family: $fuente-titulos;
+        font-size: 2rem;
+    }
+    
+}

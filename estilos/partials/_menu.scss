@@ -7,6 +7,7 @@
 
 header nav{
     color: $verde-oscuro;
+    box-shadow: 2px 2px 10px gray;
 }
 
 .logo_menu{
@@ -30,4 +31,13 @@ header nav{
         font-style: italic;
         color: $verde-claro;
     }
+}
+
+.nav-item.dropdown .nav-link {
+    display: inline-block;
+    padding-right: 0.3rem;
+}
+
+.nav-item.dropdown .dropdown-toggle {
+    padding-left: 0.2rem;
 }

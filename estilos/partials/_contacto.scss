@@ -1,6 +1,16 @@
 .titulo-contacto{
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
+    margin: 10px;
+}
+
+.subtitulo-contacto{
+    font-size: 1rem;
+    text-align: center;
+    font-family: $fuente-subtitulos;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .contenedor-imagen{

@@ -1,0 +1,39 @@
+.recursos{
+    position: relative; /* Asegurar que los elementos hijos absolutos se posicionen dentro */
+    height: 150vh;
+    color: $beige;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    .video_recursos{
+        position: absolute;
+        top: 0; 
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        opacity: 0.75;
+    }
+    
+    .overlay_recursos{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $verde-oscuro;
+        opacity: 0.5;
+        z-index: -0.95;
+    }
+    
+    .texto_recursos{
+        position: absolute; 
+        z-index: 1; 
+        text-align:center;
+        align-items: center;
+        justify-content: center;
+        color: $beige;
+    }
+}
+

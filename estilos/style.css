@@ -43,19 +43,22 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  font-weight: bold;
+  text-decoration: none;
   font-family: "Playfair Display";
 }
 .boton a {
-  color: #f5f2ea;
   text-decoration: none;
+  font-family: "Playfair Display";
+  color: #f5f2ea;
 }
 .boton:hover {
-  background-color: none;
+  background-color: #f5f2ea;
   border: 1px solid #17292d;
   color: #17292d;
+  font-family: "Playfair Display";
 }
 .boton:hover a {
+  font-family: "Playfair Display";
   color: #17292d;
   text-decoration: none;
 }
@@ -165,18 +168,20 @@ header nav {
   z-index: 1;
   text-align: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  color: #f5f2ea;
 }
 .texto_hero h1 {
-  font-size: 40px;
+  font-size: 2.8rem;
 }
 .texto_hero h2 {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-family: "Playfair Display";
 }
 .texto_hero p {
   font-family: "inter";
-  font-size: 15px;
+  font-weight: lighter;
+  font-size: 1rem;
 }
 
 @media (min-width: 600px) {
@@ -223,15 +228,31 @@ header nav {
   justify-content: center;
 }
 
-.titulo_testimonios {
+.titulo_testimonios_start {
   color: #f5f2ea;
   font-family: "Amandine";
-  text-align: center;
-  font-size: 1.5rem;
+  text-align: start;
   background-color: #17292d;
   margin: 0;
   padding: 0;
   margin-bottom: -10px;
+}
+.titulo_testimonios_start h2 {
+  font-size: 2rem;
+}
+
+.titulo_testimonios_end {
+  color: #f5f2ea;
+  font-family: "Amandine";
+  text-align: end;
+  font-size: 5rem;
+  background-color: #17292d;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -10px;
+}
+.titulo_testimonios_end h2 {
+  font-size: 2rem;
 }
 
 .titulo {
@@ -267,6 +288,7 @@ header nav {
   .cuadro_texto {
     font-size: 20px;
     max-width: 800px;
+    text-align: end;
   }
 }
 /*SERVICIOS*/
@@ -410,7 +432,7 @@ header nav {
   width: 90%;
   height: 80vh;
   font-family: "Amandine";
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 10px;
   z-index: 1;
   position: absolute;
@@ -437,7 +459,7 @@ header nav {
 
 @media (min-width: 600px) {
   .cta {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 .imagen-cta {
@@ -446,6 +468,7 @@ header nav {
   width: 80%;
   height: 80vh;
   object-fit: cover;
+  object-position: top center;
   opacity: 0.25;
   left: 30%;
 }
@@ -540,14 +563,18 @@ header nav {
 }
 
 @media (min-width: 600px) {
+  .sobrenosotras {
+    position: static;
+  }
   .sobrenosotras .sobrenosotras_imagen img {
-    width: 500px;
-    max-width: 1000px;
+    width: 250px;
+    max-width: 500px;
     margin-bottom: 70px;
   }
   .sobrenosotras .sobrenosotras_texto {
-    margin-left: 100px;
-    margin-right: 100px;
+    position: static;
+    margin-left: 80px;
+    margin-right: 80px;
   }
   .sobrenosotras .sobrenosotras_texto h2 {
     font-size: 2rem;
@@ -808,6 +835,8 @@ header nav {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 1.1rem;
+  font-family: "Inter";
+  font-weight: lighter;
 }
 
 .scroll-container {
@@ -846,7 +875,7 @@ header nav {
   border-radius: 10px;
   background-color: white;
   width: 100%;
-  min-height: 80vh;
+  min-height: 82vh;
   text-align: start;
   display: flex;
   flex-direction: column;
@@ -880,6 +909,9 @@ header nav {
   background-position: 0 5px;
   padding-left: 30px; /* deja hueco para el icono */
   color: #929e9e;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 14px;
 }
 .card-body div > p {
   font-size: 10px;
@@ -910,8 +942,18 @@ header nav {
 
 /*CONTACTO*/
 .titulo-contacto {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
+  margin: 10px;
+}
+
+.subtitulo-contacto {
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Playfair Display";
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .contenedor-imagen {
@@ -958,6 +1000,243 @@ header nav {
 
 .cuadro_texto_formulario {
   width: 100%;
+}
+
+/*RECURSOS*/
+.recursos {
+  position: relative; /* Asegurar que los elementos hijos absolutos se posicionen dentro */
+  height: 150vh;
+  color: #f5f2ea;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.recursos .video_recursos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.75;
+}
+.recursos .overlay_recursos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #17292d;
+  opacity: 0.5;
+  z-index: -0.95;
+}
+.recursos .texto_recursos {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #f5f2ea;
+}
+
+/*FAQS*/
+.titulo_faqs {
+  margin: 10px;
+}
+.titulo_faqs h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #17292d;
+}
+
+.subtitulo_faqs {
+  margin: 10px;
+}
+.subtitulo_faqs h2 {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.accordion-item {
+  background-color: #f5f2ea;
+}
+.accordion-item .accordion-header {
+  font-family: "Inter";
+  font-weight: 100;
+  font-size: 0.95rem;
+}
+.accordion-item .accordion-header button {
+  background-color: #f5f2ea;
+  color: #17292d;
+  border-color: #17292d;
+}
+.accordion-item .accordion-header button:focus {
+  outline: 4px solid #929e9e;
+  box-shadow: none;
+}
+.accordion-item .accordion-header button[aria-expanded=true] {
+  background-color: #17292d;
+  color: #f5f2ea;
+  font-weight: bold;
+  border: none;
+}
+.accordion-item .accordion-body {
+  color: #17292d;
+  font-family: "Inter";
+  font-weight: 200;
+  font-size: 0.85rem;
+}
+
+.accordion {
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .accordion {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .accordion-item {
+    width: 100%;
+  }
+  .accordion-item .accordion-button {
+    width: 100%;
+    white-space: normal;
+    word-break: break-word;
+  }
+  .accordion-item .accordion-body {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .d-flex.flex-md-row {
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .d-flex.flex-md-row .accordion {
+    flex: 1;
+    max-width: 500px;
+  }
+}
+/*BLOG*/
+.contenedor_tarjetas_blog {
+  display: flex;
+  gap: 20px;
+}
+
+.tarjeta_blog {
+  text-align: center;
+  width: 300px;
+  border: 0.1px solid #17292d;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  box-shadow: 2px 2px 5px gray;
+}
+
+.contenedor_blog {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.contenedor_blog .contenedor_blog_imagen {
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+}
+.contenedor_blog .contenedor_blog_imagen img {
+  width: 300px;
+  height: 300px;
+}
+.contenedor_blog .contenedor_blog_overlay {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: #17292d;
+  opacity: 0.5;
+  top: 0;
+  z-index: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.contenedor_blog:hover .contenedor_blog_overlay {
+  opacity: 0;
+}
+.contenedor_blog .contenedor_blog_texto {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  color: #f5f2ea;
+}
+.contenedor_blog .contenedor_blog_texto h3 {
+  font-family: "Amandine";
+  font-size: 30px;
+  text-align: center;
+}
+
+.contenedor_blog_descripcion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  font-family: "Inter";
+  font-weight: 300;
+  color: #17292d;
+}
+
+.entrada_blog .imagen_blog img {
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
+}
+.entrada_blog .texto_blog {
+  width: 85%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.iconos_redes {
+  margin: 10px;
+  margin-top: 35px;
+  width: 15%;
+}
+.iconos_redes .icono-redes_blog {
+  height: 40px;
+  width: 40px;
+}
+
+.titulo_blog h1 {
+  color: #17292d;
+  font-size: 2rem;
+}
+.titulo_blog p {
+  font-size: 0.75rem;
+  font-style: italic;
+  font-family: "Inter";
+  font-weight: 300;
+}
+
+.descripcion_blog p {
+  font-family: "Inter";
+  font-weight: 300;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */

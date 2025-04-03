@@ -54,17 +54,22 @@ body{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    font-weight: bold;
+    text-decoration: none;
     font-family:$fuente-subtitulos;
     a{
-        color: $beige;
         text-decoration: none;
+            font-family:$fuente-subtitulos;
+            color: $beige;
+    
     }
     &:hover{
-        background-color: none;
+        background-color: $beige;
         border:1px solid #17292d;
         color: $verde-oscuro;
+        font-family:$fuente-subtitulos;
         a{
+            
+            font-family:$fuente-subtitulos;
             color: $verde-oscuro;
             text-decoration: none;
         }
@@ -92,3 +97,11 @@ body{
 /*CONTACTO*/
 @import 'partials/contacto';
 
+/*RECURSOS*/
+@import 'partials/recursos';
+
+/*FAQS*/
+@import 'partials/faqs';
+
+/*BLOG*/
+@import 'partials/blog'

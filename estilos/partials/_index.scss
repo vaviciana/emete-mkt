@@ -33,17 +33,19 @@
         z-index: 1; 
         text-align:center;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        color: $beige;
         h1{
-            font-size: 40px;
+            font-size: 2.8rem;
         }
         h2{
-            font-size: 20px;
+            font-size: 1.5rem;
             font-family: $fuente-subtitulos;
         }
         p{
             font-family: "inter";
-            font-size: 15px;
+            font-weight: lighter;
+            font-size: 1rem;
         }
     }
 @media (min-width: 600px){
@@ -95,16 +97,35 @@
     justify-content: center;
 }
 
-.titulo_testimonios{
+
+
+.titulo_testimonios_start{
     color: $beige;
     font-family: $fuente-titulos;
-    text-align: center;
-    font-size: 1.5rem;
+    text-align: start;
     background-color: $verde-oscuro;
     margin: 0;
     padding: 0;
     margin-bottom: -10px;
+    h2{
+        font-size: 2rem;
+    }
 }
+
+.titulo_testimonios_end{
+    color: $beige;
+    font-family: $fuente-titulos;
+    text-align: end;
+    font-size: 5rem;
+    background-color: $verde-oscuro;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -10px;
+    h2{
+        font-size: 2rem;
+    }
+}
+
 
 .titulo{
     color: $verde-oscuro;
@@ -139,6 +160,7 @@
     .cuadro_texto{
         font-size: 20px;
         max-width: 800px;
+        text-align: end;
     }
 }
 
@@ -292,7 +314,7 @@
     width: 90%;
     height: 80vh;
     font-family: $fuente-titulos;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 10px;
     z-index: 1;
     position: absolute;
@@ -319,7 +341,7 @@
 
 @media (min-width: 600px){
     .cta {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -329,6 +351,7 @@
     width: 80%;
     height: 80vh;
     object-fit: cover;
+    object-position: top center;
     opacity: 0.25;
     left:30%;
 }

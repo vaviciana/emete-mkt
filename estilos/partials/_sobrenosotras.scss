@@ -97,16 +97,18 @@
 
 @media (min-width: 600px){
 .sobrenosotras{    
+    position: static;
     .sobrenosotras_imagen {
         img {
-            width: 500px;
-            max-width: 1000px;
+            width: 250px;
+            max-width: 500px;
             margin-bottom: 70px;
         }
     }
     .sobrenosotras_texto{
-        margin-left: 100px;
-        margin-right: 100px;
+        position:static;
+        margin-left: 80px;
+        margin-right: 80px;
         h2{
             font-size: 2rem;
         }

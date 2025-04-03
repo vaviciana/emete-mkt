@@ -1,0 +1,85 @@
+.titulo_faqs{
+    margin: 10px;
+    h1{
+        font-size: 2rem;
+        text-align: center;
+        color: $verde-oscuro;
+        
+    }
+}
+
+.subtitulo_faqs{
+    margin: 10px;
+    h2{
+        font-family: 'Inter';
+        font-weight: 300;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+.accordion-item{
+    background-color: $beige;
+    .accordion-header{
+        font-family: 'Inter';
+        font-weight: 100;
+        font-size: 0.95rem;
+        button{
+            background-color: $beige;
+            color: $verde-oscuro;
+            border-color: $verde-oscuro;
+            &:focus {
+                outline: 4px solid $verde-claro;
+                box-shadow: none;
+            }
+            &[aria-expanded="true"] {
+                background-color: $verde-oscuro;
+                color: $beige;
+                font-weight: bold;
+                border:none;
+            }
+        }
+    }
+    .accordion-body{
+        color: $verde-oscuro;
+        font-family: 'Inter';
+        font-weight: 200;
+        font-size: 0.85rem;
+    }
+}
+
+.accordion{
+    margin:10px
+}
+
+@media (max-width: 600px) {
+        .accordion {
+        width: 100%;
+        margin: 0 auto;
+        }
+    
+        .accordion-item {
+        width: 100%;
+    
+        .accordion-button {
+            width: 100%;
+            white-space: normal;
+            word-break: break-word;
+        }
+    
+        .accordion-body {
+            width: 100%;
+        }
+        }
+    }
+
+@media (min-width: 768px) {
+    .d-flex.flex-md-row {
+        justify-content: space-between;
+        gap: 2rem;
+        .accordion {
+            flex: 1;
+            max-width: 500px; // evita que se estire todo
+        }
+    }
+}

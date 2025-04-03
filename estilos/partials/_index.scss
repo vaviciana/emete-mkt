@@ -307,6 +307,96 @@
     }
 }
 
+/*PROCESO*/
+.titulo_proceso{
+    @extend .titulo;
+    text-align: center;
+}
+
+.contenedor_proceso {
+    margin: 20px;
+    height: 60vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+    gap: 20px;
+    overflow-y: hidden;
+    overflow-x: auto;  
+    scroll-snap-type: x mandatory; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none;     
+
+        &::-webkit-scrollbar {
+            display: none;}              
+    
+        .paso_proceso {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            min-width: 230px;
+    
+        .circulo_proceso {
+            width: 100px;
+            height: 100px;
+            background-color: $verde-claro;
+            color: $beige;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 3rem;
+            position: absolute;
+            top: 0px; // para que se "meta" encima del bloque
+            z-index: 1;
+            
+            p {
+            margin: 0;
+            font-family: 'Amandine';
+            color: $verde-oscuro;
+            }
+        }
+    
+        .contenido_proceso {
+            background-color: $verde-oscuro;
+            padding: 60px 20px 20px 20px; // espacio arriba para que no tape el texto
+            margin-top: 40px; // espacio visual con el resto
+            border-radius: 10px;
+            position: relative;
+            z-index: 0;
+            height: 50vh;
+            color: $beige;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            h3{
+                height: 10vh;
+                text-align: center;
+                font-family: 'Amandine';
+            }
+            p {
+                height: 40vh;
+                font-family: 'Inter';
+                font-weight: 100;
+                text-align: justify;
+            }
+        }
+        }
+    
+        @media (min-width: 768px) {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 30px;
+        }
+}
+
+
+/*CTA INDEX*/
+
 .cta_general{
     overflow: hidden;
 }

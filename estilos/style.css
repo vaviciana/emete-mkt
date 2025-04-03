@@ -261,7 +261,7 @@ header nav {
   font-size: 2rem;
 }
 
-.titulo {
+.titulo, .titulo_proceso {
   color: #17292d;
   font-family: "Amandine";
   text-align: center;
@@ -288,7 +288,7 @@ header nav {
 }
 
 @media (min-width: 600px) {
-  .titulo {
+  .titulo, .titulo_proceso {
     font-size: 80px;
     text-align: start;
   }
@@ -431,6 +431,89 @@ header nav {
     height: 80vh;
   }
 }
+/*PROCESO*/
+.titulo_proceso {
+  text-align: center;
+}
+
+.contenedor_proceso {
+  margin: 20px;
+  height: 60vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 30px;
+  gap: 20px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.contenedor_proceso::-webkit-scrollbar {
+  display: none;
+}
+.contenedor_proceso .paso_proceso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 230px;
+}
+.contenedor_proceso .paso_proceso .circulo_proceso {
+  width: 100px;
+  height: 100px;
+  background-color: #929e9e;
+  color: #f5f2ea;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 3rem;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+.contenedor_proceso .paso_proceso .circulo_proceso p {
+  margin: 0;
+  font-family: "Amandine";
+  color: #17292d;
+}
+.contenedor_proceso .paso_proceso .contenido_proceso {
+  background-color: #17292d;
+  padding: 60px 20px 20px 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+  height: 50vh;
+  color: #f5f2ea;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contenedor_proceso .paso_proceso .contenido_proceso h3 {
+  height: 10vh;
+  text-align: center;
+  font-family: "Amandine";
+}
+.contenedor_proceso .paso_proceso .contenido_proceso p {
+  height: 40vh;
+  font-family: "Inter";
+  font-weight: 100;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  .contenedor_proceso {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 30px;
+  }
+}
+
+/*CTA INDEX*/
 .cta_general {
   overflow: hidden;
 }

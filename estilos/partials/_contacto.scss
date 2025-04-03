@@ -7,7 +7,8 @@
 .subtitulo-contacto{
     font-size: 1rem;
     text-align: center;
-    font-family: $fuente-subtitulos;
+    font-family: 'Inter';
+    font-weight: 200;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -18,7 +19,7 @@
     z-index: -1;
     object-fit: cover;
     .imagen-contacto{
-        width: 300px;
+        width: 20rem;
         height: auto;
     }
 }
@@ -28,7 +29,7 @@
     top: 20px;
     left: 20px;
     height: 100%;
-    width: 300px;
+    width: 20rem;
     background: $verde-oscuro;
     opacity: 0.25;
 }

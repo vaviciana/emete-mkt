@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-            <img src="recursos/Logos Emeté - Transparente-06.png" alt="" class="logo_menu">
+            <img src="../recursos/Logos Emeté - Transparente-06.png" alt="" class="logo_menu">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -64,49 +64,79 @@
         <section class="recursos">
             <video autoplay muted loop playsinline src="../recursos/bg_recursos.mp4" class="video_recursos"></video>
             <div class="overlay_recursos"></div>
-            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center texto_recursos">
+            <div class="d-flex flex-column align-items-center justify-content-center texto_recursos">
                 <div>
                     <div>
-                        <h1 class="titulo-contacto">
-                            Negocio Optimizado 100%
+                        <h1>
+                            Calienta, que sales... Hoy aprendes a optimizar tu negocio.
                         </h1>
                     </div>
                     <div>
-                        <h2 class="subtitulo-contacto">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, excepturi! Enim quasi, possimus rem quas repellat quisquam delectus odio quibusdam distinctio ullam eaque maiores suscipit reprehenderit, ex hic error ea.
+                        <h2>
+                            Aquí tienes un ebook con VALOR REAL. Porque lo que de verdad transforma tu negocio no es la teoría, sino la acción. Y sí, en Emeté.mkt nos gusta darte todas las herramientas para que empieces ya.
                         </h2>
                     </div>
                 </div>
-                <div class="contenedor-formulario">
-                    <div class="formulario">
-                        <form action="enviar.php" method="post">
-                            <div class="lineas_formulario">
-                                <label for="Nombre" class="label">Nombre</label>
-                                <input type="text" name="nombre" required class="cuadro_texto_formulario">
-                            </div>
-                            <div class="lineas_formulario">
-                                <label for="Apellido" class="label">Apellido</label>
-                                <input type="text" name="apellido" required class="cuadro_texto_formulario">
-                            </div>
-                            <div class="lineas_formulario">
-                                <label for="Telefono" class="label">Teléfono</label>
-                                <input type="number" name="telefono" required class="cuadro_texto_formulario">
-                            </div>
-                            <div class="lineas_formulario">
-                                <label for="Correo" class="label">Correo</label>
-                                <input type="email" name="correo" required class="cuadro_texto_formulario">
-                            </div>
-                            <div class="lineas_formulario">
-                                <label for="Comentarios" class="label">Comentarios</label>
-                                <textarea name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..." class="cuadro_texto_formulario"></textarea>                    
-                            </div>
-                            <button class="btn boton m-2" type="submit">Enviar</button>
-                        </form>
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+                    <div class="contenedor-formulario">
+                        <div class="formulario">
+                            <form action="enviar.php" method="post">
+                                <div class="lineas_formulario">
+                                    <label for="Nombre" class="label">Nombre</label>
+                                    <input type="text" name="nombre" required class="cuadro_texto_formulario">
+                                </div>
+                                <div class="lineas_formulario">
+                                    <label for="Apellido" class="label">Apellido</label>
+                                    <input type="text" name="apellido" required class="cuadro_texto_formulario">
+                                </div>
+                                <div class="lineas_formulario">
+                                    <label for="Telefono" class="label">Teléfono</label>
+                                    <input type="number" name="telefono" required class="cuadro_texto_formulario">
+                                </div>
+                                <div class="lineas_formulario">
+                                    <label for="Correo" class="label">Correo</label>
+                                    <input type="email" name="correo" required class="cuadro_texto_formulario">
+                                </div>
+                                <div class="lineas_formulario">
+                                    <label for="Comentarios" class="label">Comentarios</label>
+                                    <textarea name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..." class="cuadro_texto_formulario"></textarea>                    
+                                </div>
+                                <button class="btn boton m-2" type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="texto_recursos_descripcion">
+                        <p>
+                            "¿Otro ebook igual?" No amiga, no. Nosotras no hacemos nada igual que en otra parte. Aquí venimos a hacer las cosas bien:
+                            <ul>
+                                <li>
+                                    ✅ Checklist para saber si tu negocio está bien optimizado.
+                                    (Es muy posible que no lo esté… todavía 😉)
+                                </li>
+                                <li>
+                                    ⚡ 5 errores que frenan tu crecimiento.
+                                    (Los hemos visto mil veces, ¡si no te los decimos reventamos!)
+                                </li>
+                                <li>
+                                    💡 Cómo mejorar tu negocio desde el branding hasta tus anuncios.
+                                    (Y todo lo que está en medio, obviamente).
+                                </li>
+                                <li>
+                                    📚 Plantillas y recursos prácticos para aplicar todo de inmediato.
+                                    (Nos gustan las cosas fáciles).
+                                </li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>
-
         </section>
+        <div class="cta_recursos">
+            <p>
+                ¿A qué esperas para tener todo esto GRATIS?<br>
+                Deja tus datos y recibirás al instante el ebook "Negocio 100% Optimizado" en tu correo. ¡Te estamos esperando para llevar tu negocio a otro nivel!
+            </p>
+        </div>
     </main>
     <footer class="mt-5">
         <hr class="featurette-divider m-2">
@@ -121,7 +151,7 @@
             </div>
             <div class="d-none d-md-flex">
                 <button class="btn boton">
-                    Unete a nuestra newsletter
+                    Recursos
                 </button>
             </div>
         </div>

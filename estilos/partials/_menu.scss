@@ -1,8 +1,8 @@
 .navbar-nav{
     color: $verde-oscuro;
-    &:hover{
-        color: $verde-claro;
-    }
+    font-size: 1rem;
+    font-family: 'Inter';
+    font-weight: 300;
 }
 
 header nav{
@@ -31,6 +31,12 @@ header nav{
         font-style: italic;
         color: $verde-claro;
     }
+}
+
+.dropdown-item{
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 0.8rem;
 }
 
 .nav-item.dropdown .nav-link {

@@ -49,11 +49,11 @@ body{
 .boton{
     background-color: $verde-oscuro;
     color: $beige;
-    border-radius: 10px;
+    border-radius: 9999px;
+  padding: 0.5rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     text-decoration: none;
     font-family:$fuente-subtitulos;
     a{

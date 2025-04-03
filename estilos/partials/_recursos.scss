@@ -1,6 +1,6 @@
 .recursos{
     position: relative; /* Asegurar que los elementos hijos absolutos se posicionen dentro */
-    height: 150vh;
+    height: 160vh;
     color: $beige;
     text-align: center;
     display: flex;
@@ -34,6 +34,57 @@
         align-items: center;
         justify-content: center;
         color: $beige;
+        h1{
+            font-size: 2rem;
+            margin: 20px;
+        }
+        h2{
+            font-family:'Inter';
+            font-weight: 200;
+            font-size: 1rem;
+            margin: 20px;
+        }
     }
 }
 
+.contenedor-formulario{
+    min-width: 40%;
+}
+
+.texto_recursos_descripcion{
+        font-family: 'Inter';
+        font-weight: 300;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 0.8rem;
+        background-color: $verde-claro;
+        border-radius: 10px;
+        opacity: 0.9;
+        padding:2%;
+        color: $verde-oscuro;
+        box-shadow: 2px 2px 5px black;
+        text-align: start;
+    ul{
+        list-style: none;
+        
+    }
+}
+
+
+@media (min-width:768px){
+    .recursos{
+        height: 100vh;
+    }
+}
+
+.cta_recursos{
+    background-color: $verde-oscuro;
+    color: $beige;
+    p{
+        font-family: 'Amandine';
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 5px;
+    }
+    
+}

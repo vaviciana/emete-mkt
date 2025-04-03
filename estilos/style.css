@@ -38,11 +38,11 @@ body {
 .boton {
   background-color: #17292d;
   color: #f5f2ea;
-  border-radius: 10px;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
   text-decoration: none;
   font-family: "Playfair Display";
 }
@@ -70,9 +70,9 @@ body {
 /*MENU*/
 .navbar-nav {
   color: #17292d;
-}
-.navbar-nav:hover {
-  color: #929e9e;
+  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 300;
 }
 
 header nav {
@@ -101,6 +101,12 @@ header nav {
   background-color: transparent;
   font-style: italic;
   color: #929e9e;
+}
+
+.dropdown-item {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 0.8rem;
 }
 
 .nav-item.dropdown .nav-link {
@@ -284,6 +290,7 @@ header nav {
 @media (min-width: 600px) {
   .titulo {
     font-size: 80px;
+    text-align: start;
   }
   .cuadro_texto {
     font-size: 20px;
@@ -852,16 +859,39 @@ header nav {
   display: none; /* Chrome, Safari, Opera */
 }
 .scroll-container .col {
-  min-width: 220px;
-  max-width: 300px;
+  min-width: 250px;
+  max-width: 280px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-@media (min-width: 600px) {
+.scroll_redes {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 16px;
+  align-items: center;
+  justify-content: space-around;
+  scroll-snap-type: x mandatory;
+}
+.scroll_redes::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.scroll_redes .col {
+  min-width: 250px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
   .scroll-container {
     justify-content: center;
+  }
+  .scroll_redes {
+    justify-content: space-around;
   }
 }
 .card {
@@ -893,10 +923,10 @@ header nav {
   font-family: "Amandine";
   color: #17292d;
   text-align: center;
-  height: 45px;
+  height: 4rem;
 }
 .card-body h3 {
-  height: 45px;
+  height: 4rem;
   margin: 10px;
   font-size: 2rem;
   font-family: "Amandine";
@@ -950,7 +980,8 @@ header nav {
 .subtitulo-contacto {
   font-size: 1rem;
   text-align: center;
-  font-family: "Playfair Display";
+  font-family: "Inter";
+  font-weight: 200;
   margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -962,7 +993,7 @@ header nav {
   object-fit: cover;
 }
 .contenedor-imagen .imagen-contacto {
-  width: 300px;
+  width: 20rem;
   height: auto;
 }
 
@@ -971,7 +1002,7 @@ header nav {
   top: 20px;
   left: 20px;
   height: 100%;
-  width: 300px;
+  width: 20rem;
   background: #17292d;
   opacity: 0.25;
 }
@@ -1005,7 +1036,7 @@ header nav {
 /*RECURSOS*/
 .recursos {
   position: relative; /* Asegurar que los elementos hijos absolutos se posicionen dentro */
-  height: 150vh;
+  height: 160vh;
   color: #f5f2ea;
   text-align: center;
   display: flex;
@@ -1038,6 +1069,54 @@ header nav {
   align-items: center;
   justify-content: center;
   color: #f5f2ea;
+}
+.recursos .texto_recursos h1 {
+  font-size: 2rem;
+  margin: 20px;
+}
+.recursos .texto_recursos h2 {
+  font-family: "Inter";
+  font-weight: 200;
+  font-size: 1rem;
+  margin: 20px;
+}
+
+.contenedor-formulario {
+  min-width: 40%;
+}
+
+.texto_recursos_descripcion {
+  font-family: "Inter";
+  font-weight: 300;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 0.8rem;
+  background-color: #929e9e;
+  border-radius: 10px;
+  opacity: 0.9;
+  padding: 2%;
+  color: #17292d;
+  box-shadow: 2px 2px 5px black;
+  text-align: start;
+}
+.texto_recursos_descripcion ul {
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .recursos {
+    height: 100vh;
+  }
+}
+.cta_recursos {
+  background-color: #17292d;
+  color: #f5f2ea;
+}
+.cta_recursos p {
+  font-family: "Amandine";
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5px;
 }
 
 /*FAQS*/
@@ -1125,8 +1204,16 @@ header nav {
 .contenedor_tarjetas_blog {
   display: flex;
   gap: 20px;
+  justify-content: start;
+  align-items: center;
 }
 
+@media (min-width: 600px) {
+  .contenedor_tarjetas_blog {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 .tarjeta_blog {
   text-align: center;
   width: 300px;
@@ -1151,6 +1238,8 @@ header nav {
 .contenedor_blog .contenedor_blog_imagen img {
   width: 300px;
   height: 300px;
+  object-fit: cover;
+  opacity: 0.75;
 }
 .contenedor_blog .contenedor_blog_overlay {
   width: 300px;
@@ -1233,7 +1322,7 @@ header nav {
   font-weight: 300;
 }
 
-.descripcion_blog p {
+.descripcion_blog {
   font-family: "Inter";
   font-weight: 300;
   text-align: justify;

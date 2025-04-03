@@ -18,29 +18,11 @@
   font-weight: bold;
   font-style: italic;
 }
-h1 {
-  font-family: "Amandine", sans-serif;
-}
-h1 .resaltado {
+.resaltado {
   font-family: "Amandine_resaltado", sans-serif;
 }
 
-h2 .resaltado {
-  font-family: "Amandine_resaltado", sans-serif;
-}
-
-h3 .resaltado {
-  font-family: "Amandine_resaltado", sans-serif;
-}
-
-p {
-  font-family: "Inter";
-}
-p .resaltado {
-  font-family: "Amandine_resaltado", sans-serif;
-}
-
-span .resaltado {
+h1 .resaltado, h2 .resaltado, h3 .resaltado, p .resaltado, span .resaltado {
   font-family: "Amandine_resaltado", sans-serif;
 }
 

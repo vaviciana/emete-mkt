@@ -28,39 +28,15 @@ $gris: #2f2d2c;
     font-style: italic;
 }
 
-h1 {
-    font-family: 'Amandine', sans-serif;
-    .resaltado{
-        font-family: 'Amandine_resaltado', sans-serif;
-    }
+.resaltado {
+    font-family: 'Amandine_resaltado', sans-serif;
 }
 
-h2{
-    .resaltado{
-        font-family: 'Amandine_resaltado', sans-serif;
+h1, h2, h3, p, span {
+    .resaltado {
+      font-family: 'Amandine_resaltado', sans-serif; // innecesario ahora, pero lo puedes dejar si quieres claridad
     }
 }
-
-h3{
-    .resaltado{
-        font-family: 'Amandine_resaltado', sans-serif;
-    }
-}
-
-p{
-    font-family: 'Inter';
-    .resaltado{
-        font-family: 'Amandine_resaltado', sans-serif;
-    }
-}
-
-span{
-    .resaltado{
-        font-family: 'Amandine_resaltado', sans-serif;
-    }
-}
-
-
 
 /*ESTILOS GENERALES*/
 body{

@@ -75,11 +75,11 @@
 
 @media (min-width: 768px) {
     .d-flex.flex-md-row {
-        justify-content: space-between;
-        gap: 2rem;
+        justify-content: space-around;
+        gap: 1rem;
         .accordion {
             flex: 1;
-            max-width: 500px; // evita que se estire todo
+            max-width: 800px; // evita que se estire todo
         }
     }
 }

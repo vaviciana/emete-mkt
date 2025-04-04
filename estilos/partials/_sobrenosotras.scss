@@ -6,6 +6,7 @@
     text-align: left;
     background-color: $verde-oscuro;
     color: $beige;
+    font-family: 'Amandine';
     h1{
         font-size: 1.5rem;
     }
@@ -36,11 +37,11 @@
     img {
         display: flex;
         align-items: end;
-        width: auto;
-        max-width: 300px;
+        min-width: 400px;
+        max-width: 700px;
         height: 80vh;
         object-fit: cover;
-        object-position: center left;
+        object-position: center center;
         opacity: 0.5;
         margin-bottom: 170px;
     }

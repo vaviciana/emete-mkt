@@ -26,6 +26,10 @@ h1 .resaltado, h2 .resaltado, h3 .resaltado, p .resaltado, span .resaltado {
   font-family: "Amandine_resaltado", sans-serif;
 }
 
+h1 {
+  font-family: "Amandine";
+}
+
 /*ESTILOS GENERALES*/
 body {
   background-color: #f5f2ea;
@@ -175,6 +179,7 @@ header nav {
 }
 .texto_hero h1 {
   font-size: 2.8rem;
+  font-family: "Amandine";
 }
 .texto_hero h2 {
   font-size: 1.5rem;
@@ -240,7 +245,7 @@ header nav {
   margin-bottom: -10px;
 }
 .titulo_testimonios_start h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .titulo_testimonios_end {
@@ -254,7 +259,7 @@ header nav {
   margin-bottom: -10px;
 }
 .titulo_testimonios_end h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .titulo, .titulo_proceso {
@@ -438,7 +443,7 @@ header nav {
 
 .contenedor_proceso {
   margin: 20px;
-  height: 60vh;
+  height: 80vh;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -488,7 +493,7 @@ header nav {
   border-radius: 10px;
   position: relative;
   z-index: 0;
-  height: 50vh;
+  height: 60vh;
   color: #f5f2ea;
   display: flex;
   flex-direction: column;
@@ -503,7 +508,7 @@ header nav {
   height: 40vh;
   font-family: "Inter";
   font-weight: 100;
-  text-align: justify;
+  text-align: left;
 }
 @media (min-width: 768px) {
   .contenedor_proceso {
@@ -572,6 +577,7 @@ header nav {
   text-align: left;
   background-color: #17292d;
   color: #f5f2ea;
+  font-family: "Amandine";
 }
 .sobrenosotras_manifiesto h1 {
   font-size: 1.5rem;
@@ -597,11 +603,11 @@ header nav {
 .sobrenosotras .sobrenosotras_imagen img {
   display: flex;
   align-items: end;
-  width: auto;
-  max-width: 300px;
+  min-width: 400px;
+  max-width: 700px;
   height: 80vh;
   object-fit: cover;
-  object-position: center left;
+  object-position: center center;
   opacity: 0.5;
   margin-bottom: 170px;
 }
@@ -854,6 +860,7 @@ header nav {
 .titulos_servicios h1 {
   font-size: 40px;
   text-align: center;
+  font-family: "Amandine";
 }
 .titulos_servicios h2 {
   font-weight: lighter;
@@ -1052,6 +1059,9 @@ header nav {
   font-family: "Amandine";
   font-size: 2rem;
 }
+.cta_servicios p a {
+  color: #f5f2ea;
+}
 
 /*CONTACTO*/
 .titulo-contacto {
@@ -1119,7 +1129,7 @@ header nav {
 /*RECURSOS*/
 .recursos {
   position: relative; /* Asegurar que los elementos hijos absolutos se posicionen dentro */
-  height: 160vh;
+  height: 220vh;
   color: #f5f2ea;
   text-align: center;
   display: flex;
@@ -1133,7 +1143,7 @@ header nav {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 .recursos .overlay_recursos {
   position: absolute;
@@ -1173,14 +1183,15 @@ header nav {
   font-weight: 300;
   margin-left: 15px;
   margin-right: 15px;
-  font-size: 0.8rem;
-  background-color: #929e9e;
+  font-size: 0.9rem;
+  background-color: #17292d;
   border-radius: 10px;
   opacity: 0.9;
   padding: 2%;
-  color: #17292d;
+  color: #f5f2ea;
   box-shadow: 2px 2px 5px black;
   text-align: start;
+  padding: 10px;
 }
 .texto_recursos_descripcion ul {
   list-style: none;
@@ -1188,7 +1199,10 @@ header nav {
 
 @media (min-width: 768px) {
   .recursos {
-    height: 100vh;
+    height: 120vh;
+  }
+  .texto_recursos_descripcion {
+    font-size: 1.1rem;
   }
 }
 .cta_recursos {

@@ -1,6 +1,6 @@
 .recursos{
     position: relative; /* Asegurar que los elementos hijos absolutos se posicionen dentro */
-    height: 160vh;
+    height: 220vh;
     color: $beige;
     text-align: center;
     display: flex;
@@ -13,7 +13,7 @@
         height: 100%;
         object-fit: cover;
         z-index: -1;
-        opacity: 0.75;
+        opacity: 0.5;
     }
     
     .overlay_recursos{
@@ -56,14 +56,15 @@
         font-weight: 300;
         margin-left: 15px;
         margin-right: 15px;
-        font-size: 0.8rem;
-        background-color: $verde-claro;
+        font-size: 0.9rem;
+        background-color: $verde-oscuro;
         border-radius: 10px;
         opacity: 0.9;
         padding:2%;
-        color: $verde-oscuro;
+        color: $beige;
         box-shadow: 2px 2px 5px black;
         text-align: start;
+        padding: 10px;
     ul{
         list-style: none;
         
@@ -73,7 +74,10 @@
 
 @media (min-width:768px){
     .recursos{
-        height: 100vh;
+        height: 120vh;
+    }
+    .texto_recursos_descripcion{
+        font-size: 1.1rem;
     }
 }
 

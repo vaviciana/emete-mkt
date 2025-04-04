@@ -4,6 +4,7 @@
     h1{
         font-size: 40px;
         text-align: center;
+        font-family: $fuente-titulos;
     }
     h2{
         font-weight: lighter;
@@ -211,6 +212,9 @@
         color: $beige;
         font-family: $fuente-titulos;
         font-size: 2rem;
+        a{
+            color: $beige;
+        }
     }
     
 }

@@ -6,8 +6,8 @@
 }
 
 /*VARIABLES GENERALES*/
-$fuente-titulos:"Amandine";
-$fuente-subtitulos:"Playfair Display";
+$fuente-titulos:'Amandine';
+$fuente-subtitulos:'Playfair Display';
 $verde-oscuro:#17292d;
 $verde-claro: #929e9e;
 $beige: #f5f2ea;
@@ -38,6 +38,10 @@ h1, h2, h3, p, span {
     }
 }
 
+h1{
+    font-family: $fuente-titulos;
+}
+
 /*ESTILOS GENERALES*/
 body{
     background-color: $beige;
@@ -47,7 +51,7 @@ body{
     background-color: $verde-oscuro;
     color: $beige;
     border-radius: 9999px;
-  padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;

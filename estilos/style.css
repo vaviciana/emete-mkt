@@ -133,6 +133,7 @@ header nav {
 }
 
 .icono-redes {
+  margin-right: 10px;
   width: 30px;
   height: 30px;
 }
@@ -1136,93 +1137,120 @@ header nav {
 }
 
 /*RECURSOS*/
-.recursos {
-  position: relative; /* Asegurar que los elementos hijos absolutos se posicionen dentro */
-  height: 220vh;
-  color: #f5f2ea;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+.recursos_contenedor_inicial {
+  position: relative;
+  height: 80vh;
 }
-.recursos .video_recursos {
+.recursos_contenedor_inicial .recursos_imagen {
   position: absolute;
-  top: 0;
-  left: 0;
+  height: 50vh;
   width: 100%;
-  height: 100%;
   object-fit: cover;
+  object-position: top center;
   z-index: -1;
-  opacity: 0.5;
 }
-.recursos .overlay_recursos {
-  position: absolute;
-  top: 0;
-  left: 0;
+.recursos_contenedor_inicial .recursos_imagen img {
+  height: 50vh;
   width: 100%;
-  height: 100%;
-  background: #17292d;
-  opacity: 0.5;
-  z-index: -0.95;
+  object-fit: cover;
+  object-position: top center;
 }
-.recursos .texto_recursos {
+.recursos_contenedor_inicial .recursos_texto_inicial {
+  width: 80%;
   position: absolute;
-  z-index: 1;
+  background-color: #f5f2ea;
+  display: flex;
+  flex-direction: column;
+  top: 30%;
+  right: 10%;
+  padding: 15px;
+  border: 1px solid #17292d;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px gray;
+}
+.recursos_contenedor_inicial .recursos_texto_inicial h1 {
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  color: #f5f2ea;
+  font-size: 1.2rem;
 }
-.recursos .texto_recursos h1 {
-  font-size: 2rem;
-  margin: 20px;
-}
-.recursos .texto_recursos h2 {
+.recursos_contenedor_inicial .recursos_texto_inicial h2 {
   font-family: "Inter";
   font-weight: 200;
-  font-size: 1rem;
-  margin: 20px;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
-.contenedor-formulario {
-  min-width: 40%;
-}
-
-.texto_recursos_descripcion {
-  font-family: "Inter";
-  font-weight: 300;
-  margin-left: 15px;
-  margin-right: 15px;
-  font-size: 0.9rem;
-  background-color: #17292d;
-  border-radius: 10px;
-  opacity: 0.9;
-  padding: 2%;
-  color: #f5f2ea;
-  box-shadow: 2px 2px 5px black;
-  text-align: start;
-  padding: 10px;
-}
-.texto_recursos_descripcion ul {
-  list-style: none;
-}
-
-@media (min-width: 768px) {
-  .recursos {
-    height: 120vh;
+@media (min-width: 600px) {
+  .recursos_contenedor_inicial {
+    position: static;
+    display: flex;
+    flex: row;
   }
-  .texto_recursos_descripcion {
-    font-size: 1.1rem;
+  .recursos_contenedor_inicial .recursos_imagen {
+    position: static;
+    height: 100%;
+  }
+  .recursos_contenedor_inicial .recursos_imagen img {
+    height: 100%;
+    object-position: center center;
+  }
+  .recursos_contenedor_inicial .recursos_texto_inicial {
+    position: static;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  .recursos_contenedor_inicial .recursos_texto_inicial h1 {
+    font-size: 2rem;
+  }
+  .recursos_contenedor_inicial .recursos_texto_inicial h2 {
+    font-size: 1.2rem;
+  }
+  .recursos_contenedor_inicial .recursos_texto_inicial button {
+    width: 60%;
   }
 }
 .cta_recursos {
   background-color: #17292d;
   color: #f5f2ea;
+  padding: 15px;
+  box-shadow: 2px 2px 2px 2px 5px gray;
 }
 .cta_recursos p {
   font-family: "Amandine";
   font-size: 1.5rem;
   text-align: center;
-  padding: 5px;
+}
+
+.contenedor_recursos_descripcion {
+  padding: 1rem;
+  background-color: #17292d;
+  color: #f5f2ea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor_recursos_descripcion .texto_recursos_descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+.contenedor_recursos_descripcion .texto_recursos_descripcion ul li {
+  list-style: none;
+}
+.contenedor_recursos_descripcion img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: top center;
+  margin-bottom: 1rem;
 }
 
 /*FAQS*/

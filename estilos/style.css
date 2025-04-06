@@ -169,6 +169,7 @@ header nav {
 }
 
 .texto_hero {
+  padding: 1.2rem;
   height: 80vh;
   position: absolute;
   z-index: 1;
@@ -235,39 +236,12 @@ header nav {
   justify-content: center;
 }
 
-.titulo_testimonios_start {
-  color: #f5f2ea;
-  font-family: "Amandine";
-  text-align: start;
-  background-color: #17292d;
-  margin: 0;
-  padding: 0;
-  margin-bottom: -10px;
-}
-.titulo_testimonios_start h2 {
-  font-size: 3rem;
-}
-
-.titulo_testimonios_end {
-  color: #f5f2ea;
-  font-family: "Amandine";
-  text-align: end;
-  font-size: 5rem;
-  background-color: #17292d;
-  margin: 0;
-  padding: 0;
-  margin-bottom: -10px;
-}
-.titulo_testimonios_end h2 {
-  font-size: 3rem;
-}
-
-.titulo, .titulo_proceso {
+.titulo, .titulo_proceso, .titulo_servicios_index {
   color: #17292d;
   font-family: "Amandine";
   text-align: center;
   font-size: 2.5rem;
-  margin: 10px;
+  margin-left: 20px;
 }
 
 .cuadro_texto {
@@ -289,7 +263,7 @@ header nav {
 }
 
 @media (min-width: 600px) {
-  .titulo, .titulo_proceso {
+  .titulo, .titulo_proceso, .titulo_servicios_index {
     font-size: 80px;
     text-align: start;
   }
@@ -304,6 +278,15 @@ header nav {
   }
 }
 /*SERVICIOS*/
+.titulo_servicios_index {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .titulo_servicios_index {
+    font-size: 80px;
+  }
+}
 .contenedor_general_servicios_index a {
   border-radius: 50%;
 }
@@ -370,6 +353,32 @@ header nav {
 }
 
 /*TESTIMONIOS*/
+.titulo_testimonios_start {
+  color: #f5f2ea;
+  font-family: "Amandine";
+  text-align: start;
+  background-color: #17292d;
+  margin-bottom: -10px;
+  padding: 2rem;
+}
+.titulo_testimonios_start h2 {
+  font-size: 3rem;
+}
+
+.titulo_testimonios_end {
+  color: #f5f2ea;
+  font-family: "Amandine";
+  text-align: end;
+  font-size: 5rem;
+  background-color: #17292d;
+  margin: 0;
+  margin-bottom: -10px;
+  padding: 2rem;
+}
+.titulo_testimonios_end h2 {
+  font-size: 3rem;
+}
+
 .contenedor_cards_testimonios {
   display: flex;
   align-items: center;
@@ -1219,6 +1228,8 @@ header nav {
 /*FAQS*/
 .titulo_faqs {
   margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .titulo_faqs h1 {
   font-size: 2rem;
@@ -1228,6 +1239,8 @@ header nav {
 
 .subtitulo_faqs {
   margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .subtitulo_faqs h2 {
   font-family: "Inter";
@@ -1317,7 +1330,7 @@ header nav {
   border: 0.1px solid #17292d;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   box-shadow: 2px 2px 5px gray;
 }
@@ -1423,6 +1436,12 @@ header nav {
   font-family: "Inter";
   font-weight: 300;
   text-align: justify;
+}
+
+@media (min-width: 600px) {
+  .entrada_blog .texto_blog {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -18,7 +18,7 @@
     border: 0.1px solid $verde-oscuro;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 5px gray;
 }
@@ -131,4 +131,12 @@
     font-family: 'Inter';
         font-weight: 300;
         text-align: justify;
+}
+
+@media (min-width:600px){
+    .entrada_blog{
+        .texto_blog{
+            width: 50%;
+        }
+    }
 }

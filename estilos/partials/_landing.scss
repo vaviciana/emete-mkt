@@ -73,3 +73,131 @@
         }
     }
 }
+
+
+.circulo-container{
+    .circulo{
+        .frente_escuchamos{
+            background: url('/recursos/escuchamos.jpg') center/cover no-repeat;
+            font-family: 'amandine_resaltado';
+            color: $verde-oscuro;
+            z-index: 1;
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background-color: $beige;
+                opacity: 0.5;
+                border-radius: 50%;
+                z-index: -1;
+            }
+            h2{
+                font-size: 40px;
+            };
+        }
+        .atras_escuchamos{
+            background: url('/recursos/escuchamos.jpg') center/cover no-repeat;
+            transform: rotateY(180deg);
+            position: relative;
+            z-index: 1;
+            color: $beige;
+            font-family: 'Inter';
+            font-weight: 300;
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background-color: $verde-oscuro;
+                opacity: 0.5;
+                border-radius: 50%;
+                z-index: -1;
+            }
+        }
+        .frente_analizamos{
+            background: url('/recursos/analizamos.jpg') center/cover no-repeat;
+            font-family: 'amandine_resaltado';
+            color: $verde-oscuro;
+            z-index: 1;
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background-color: $beige;
+                opacity: 0.5;
+                border-radius: 50%;
+                z-index: -1;
+            }
+            h2{
+                font-size: 40px;
+            };
+        }
+        .atras_analizamos{
+            background: url('/recursos/analizamos.jpg') center/cover no-repeat;
+            transform: rotateY(180deg);
+            position: relative;
+            z-index: 1;
+            color: $beige;
+            font-family: 'Inter';
+            font-weight: 300;
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background-color: $verde-oscuro;
+                opacity: 0.5;
+                border-radius: 50%;
+                z-index: -1;
+            }
+        }
+        .frente_proponemos{
+            background: url('/recursos/analizamos.jpg') center/cover no-repeat;
+            font-family: 'amandine_resaltado';
+            color: $verde-oscuro;
+            z-index: 1;
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background-color: $beige;
+                opacity: 0.5;
+                border-radius: 50%;
+                z-index: -1;
+            }
+            h2{
+                font-size: 40px;
+            };
+        }
+        .atras_proponemos{
+            background: url('/recursos/analizamos.jpg') center/cover no-repeat;
+            transform: rotateY(180deg);
+            position: relative;
+            z-index: 1;
+            color: $beige;
+            font-family: 'Inter';
+            font-weight: 300;
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background-color: $verde-oscuro;
+                opacity: 0.5;
+                border-radius: 50%;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+@media(min-width:600px){
+    .por-que-landing{
+        height: 50vh;
+        margin: 5rem;
+        > div{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content:center;
+        }
+    }
+}

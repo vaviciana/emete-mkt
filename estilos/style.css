@@ -1647,5 +1647,127 @@ header nav {
     opacity: 0.5;
   }
 }
+.circulo-container .circulo .frente_escuchamos {
+  background: url("/recursos/escuchamos.jpg") center/cover no-repeat;
+  font-family: "amandine_resaltado";
+  color: #17292d;
+  z-index: 1;
+}
+.circulo-container .circulo .frente_escuchamos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #f5f2ea;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+}
+.circulo-container .circulo .frente_escuchamos h2 {
+  font-size: 40px;
+}
+.circulo-container .circulo .atras_escuchamos {
+  background: url("/recursos/escuchamos.jpg") center/cover no-repeat;
+  transform: rotateY(180deg);
+  position: relative;
+  z-index: 1;
+  color: #f5f2ea;
+  font-family: "Inter";
+  font-weight: 300;
+}
+.circulo-container .circulo .atras_escuchamos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #17292d;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+}
+.circulo-container .circulo .frente_analizamos {
+  background: url("/recursos/analizamos.jpg") center/cover no-repeat;
+  font-family: "amandine_resaltado";
+  color: #17292d;
+  z-index: 1;
+}
+.circulo-container .circulo .frente_analizamos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #f5f2ea;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+}
+.circulo-container .circulo .frente_analizamos h2 {
+  font-size: 40px;
+}
+.circulo-container .circulo .atras_analizamos {
+  background: url("/recursos/analizamos.jpg") center/cover no-repeat;
+  transform: rotateY(180deg);
+  position: relative;
+  z-index: 1;
+  color: #f5f2ea;
+  font-family: "Inter";
+  font-weight: 300;
+}
+.circulo-container .circulo .atras_analizamos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #17292d;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+}
+.circulo-container .circulo .frente_proponemos {
+  background: url("/recursos/analizamos.jpg") center/cover no-repeat;
+  font-family: "amandine_resaltado";
+  color: #17292d;
+  z-index: 1;
+}
+.circulo-container .circulo .frente_proponemos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #f5f2ea;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+}
+.circulo-container .circulo .frente_proponemos h2 {
+  font-size: 40px;
+}
+.circulo-container .circulo .atras_proponemos {
+  background: url("/recursos/analizamos.jpg") center/cover no-repeat;
+  transform: rotateY(180deg);
+  position: relative;
+  z-index: 1;
+  color: #f5f2ea;
+  font-family: "Inter";
+  font-weight: 300;
+}
+.circulo-container .circulo .atras_proponemos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #17292d;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@media (min-width: 600px) {
+  .por-que-landing {
+    height: 50vh;
+    margin: 5rem;
+  }
+  .por-que-landing > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -17,55 +17,54 @@
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-            <img src="/recursos/Logos Emeté - Transparente-06.png" alt="" class="logo_menu">
+            <img src="../recursos/Logos Emeté - Transparente-06.png" alt="" class="logo_menu">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="/">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sobremi.html">Conócenos</a>
+                        <a class="nav-link" href="/sobremi">Conócenos</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <!-- Enlace principal que lleva a servicios.html -->
-                        <a class="nav-link" href="servicios.html">
+                        <!-- Enlace principal que lleva a servicios -->
+                        <a class="nav-link" href="/servicios-general">
                             Servicios
                         </a>
                         <!-- Botón para desplegar el menú (solo flechita) -->
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="servicios/redes.html">Gestión de Redes</a></li>
-                            <li><a class="dropdown-item" href="servicios/diseño.html">Diseño Gráfico</a></li>
-                            <li><a class="dropdown-item" href="servicios/web.html">Diseño Web</a></li>
-                            <li><a class="dropdown-item" href="servicios/publicidad.html">Publicidad Digital</a></li>
-                            <li><a class="dropdown-item" href="servicios/estrategia.html">Estrategia 1:1</a></li>
-                            <li><a class="dropdown-item" href="servicios/email.html">Email Marketing</a></li>
-                            </ul>
-                        </li>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/servicios/redes">Gestión de Redes</a></li>
+                            <li><a class="dropdown-item" href="/servicios/diseño">Diseño Gráfico</a></li>
+                            <li><a class="dropdown-item" href="/servicios/web">Diseño Web</a></li>
+                            <li><a class="dropdown-item" href="/servicios/publicidad">Publicidad Digital</a></li>
+                            <li><a class="dropdown-item" href="/servicios/estrategia">Estrategia 1:1</a></li>
+                            <li><a class="dropdown-item" href="/servicios/email">Email Marketing</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">¿Hablamos?</a>
+                        <a class="nav-link" href="/contacto">¿Hablamos?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="faqs.html">FAQ's</a>
+                        <a class="nav-link" href="/faqs">FAQ's</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
+                        <a class="nav-link" href="/blog">Blog</a>
                     </li>
                 </ul>
-                <a class="boton w-25 d-flex d-md-none" href="../pages/recursos.html">Recursos</a>
+                <a class="boton w-25 d-flex d-md-none" href="/lead-magnet">Recursos</a>
             </div>
-                <button class="d-none d-md-flex btn boton">
-                    <a href="recursos.html">
-                        Recursos
-                    </a>
-                </button>
+            <button class="d-none d-md-flex btn boton">
+                <a href="/lead-magnet">
+                    Recursos
+                </a>
+            </button>
             </div>
         </nav>
-    </header>
+    </header> 
     <main>
         <div class="d-flex flex-column align-items-center justify-content-center">
             <div>
@@ -1016,26 +1015,39 @@
     </main>
     <footer class="mt-5">
         <hr class="featurette-divider m-2">
-        <div class="d-flex justify-content-between z-1 contenedor_footer">
-            <div>
-                <img src="../recursos/Logos Emeté - Transparente-03.png" alt="" class="footer">
+        <div class="d-flex flex-column justify-content-center">
+            <div class="d-flex justify-content-between z-1 contenedor_footer">
+                <div>
+                    <img src="recursos/Logos Emeté - Transparente-03.png" alt="" class="footer">
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <div class="d-flex flex-column flex-md-row gap-1">
+                        <a href="https://www.tiktok.com/@emete.mkt?is_from_webapp=1&sender_device=pc">
+                            <img src="recursos/path1.png" alt="" class="icono-redes">
+                        </a>
+                        <a href="https://www.instagram.com/emete.mkt?igsh=MWM2bHE5aWE4aGc4Zw==">
+                            <img src="recursos/path2.png" alt="" class="icono-redes">
+                        </a>
+                        <a href="https://www.linkedin.com/company/emet%C3%A9-mkt/">
+                            <img src="recursos/path3.png" alt="" class="icono-redes">
+                        </a>
+                    </div>
+                    <div class="aviso-legal w-100 d-none d-md-flex">
+                        <a href="/aviso">Política de cookies y Aviso legal</a>
+                    </div>
+                </div>
+                <div class="d-none d-md-flex">
+                    <a href="/lead-magnet" class="boton">Recursos</a>
+                </div>
             </div>
-            <div class="d-flex flex-column flex-md-row gap-1">
-                <a href="https://www.tiktok.com/@emete.mkt?is_from_webapp=1&sender_device=pc">
-                    <img src="../recursos/path1.png" alt="" class="icono-redes">
-                </a>
-                <a href="https://www.instagram.com/emete.mkt?igsh=MWM2bHE5aWE4aGc4Zw==">
-                    <img src="../recursos/path2.png" alt="" class="icono-redes">
-                </a>
-                <a href="https://www.linkedin.com/company/emet%C3%A9-mkt/">
-                    <img src="../recursos/path3.png" alt="" class="icono-redes">
-                </a>
-            </div>
-            <div class="d-none d-md-flex">
-                <a href="recursos.html" class="boton">Recursos</a>
+            <div class="aviso-legal w-100 d-flex d-md-none">
+                <a href="/aviso">Política de cookies y Aviso legal</a>
             </div>
         </div>
     </footer>
+    <a href="https://api.whatsapp.com/send?phone=+34614282064&text=Hola,%20quiero%20más%20información!"  class="whatsapp-button" target="_blank">
+        <img src="/recursos/whatsapp.png" alt="WhatsApp">
+    </a>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

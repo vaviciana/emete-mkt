@@ -105,35 +105,9 @@
         }
     }
 
-    .scroll_redes {
-        display: flex;
-        overflow-x: auto;
-        gap: 16px;
-        padding: 16px;
-        align-items: center;
-        justify-content: space-around;
-        scroll-snap-type: x mandatory;
-
-        &::-webkit-scrollbar {
-            display: none; /* Chrome, Safari, Opera */
-        }
-
-        .col{
-            min-width: 250px;
-            max-width: 280px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-    }
-
     @media (min-width: 768px){
         .scroll-container{
             justify-content: center;
-        }
-        
-        .scroll_redes{
-            justify-content: space-around;
         }
     }
 

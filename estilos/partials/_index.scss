@@ -278,6 +278,7 @@
         top:-110px;
         left: -50px;
         box-shadow: 2px 2px 5px gray;
+        object-position: top center;
         }
 }
 
@@ -302,17 +303,23 @@
     padding-top: 10px;
     font-family: $fuente-titulos;
     color: $verde-oscuro;
+    small{
+        font-size: 0.8rem;
+    }
 }
 
 .card-text_testimonios{
     font-family: 'Inter';
+    font-weight: 300;
+    font-size: 0.7rem;
     color: $verde-oscuro;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
 }
 
 .red_testimonios{
-    font-size: 12px;
+    font-size: 0.8rem;
     font-family: $fuente-subtitulos;
     text-align: center;
 }

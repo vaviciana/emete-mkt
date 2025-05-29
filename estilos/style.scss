@@ -14,19 +14,23 @@ $beige: #f5f2ea;
 $gris: #2f2d2c;
 
 /*FUENTES*/
+/*FUENTES*/
 @font-face {
     font-family: 'Amandine';
-    src: url('https://vaviciana.github.io/emete-mkt/recursos/fuentes/Amandine-medium.otf') format('opentype');
+    src: url('../recursos/fuentes/Amandine-medium.woff2') format('woff2'),
+        url('../recursos/fuentes/Amandine-medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Amandine_resaltado';
-    src: url('https://vaviciana.github.io/emete-mkt/recursos/fuentes/Amandine-bolditalic.otf') format('opentype');
-    font-weight: bold;
-    font-style: italic;
+    font-family: "Amandine_resaltado";
+    src: url("../recursos/fuentes/Amandine-bolditalic.woff2") format("woff2"),
+        url("../recursos/fuentes/Amandine-bolditalic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
+
 
 .resaltado {
     font-family: 'Amandine_resaltado', sans-serif;
@@ -80,6 +84,89 @@ body{
     max-width: 40%;
 }
 
+/*POLÍTICA DE COOKIES*/
+.cookie-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background:white ;
+    color: $verde-oscuro;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 999;
+}
+.cookie-container button {
+    background: $verde-oscuro;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.cookie-container button:hover {
+    background: white;
+    color: $verde-oscuro;
+    border: 1px solid $verde-oscuro;
+}
+.hidden {
+    display: none;
+}
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reject-btn {
+    background: $verde-oscuro;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.reject-btn:hover {
+    background: white;
+    color: $verde-oscuro;
+    border: 1px solid $verde-oscuro;
+}
+
+/*BOTON WHATSAPP*/
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: $verde-oscuro;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 998;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+
+
 /*MENU*/
 @import 'partials/menu';
 
@@ -105,4 +192,7 @@ body{
 @import 'partials/faqs';
 
 /*BLOG*/
-@import 'partials/blog'
+@import 'partials/blog';
+
+/*LANDING*/
+@import 'partials/landing';

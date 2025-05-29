@@ -9,6 +9,22 @@
     object-fit: cover;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.aviso-legal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+    text-align: center;
+    text-decoration: none;
+    color: $gris;
+    font-family: 'Inter';
+    font-weight: 300;
+    color: $gris;
+    font-size: 0.8rem;
+    }
 }
 
 .icono-redes{
